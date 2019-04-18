@@ -7,7 +7,7 @@ import Hello from './components/HelloWithState';
 ReactDOM.render(
   <Hello name="TypeScript" enthusiasmLevel={10} />,
   // adding "as HTMLElement" does the type assertion for typeScript.
-  // we could have used the !(bang) instead and that jsut means not null || undefined
+  // we could have used the !(bang) instead and that just means not null || undefined
   // doing it with "as HTMLElement" is a bit more specific!
   document.getElementById('root') as HTMLElement
 );

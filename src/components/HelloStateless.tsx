@@ -9,7 +9,7 @@ export interface Props {
 // here is the stateless function component version:
 // function Hello({name, enthusiasmLevel = 1}: Props) {
 //   if(enthusiasmLevel <= 0) {
-//     throw new ErrorEvent('You need at least level 1 on your enthusiasm to be here!');
+//     throw new Error('You need at least level 1 on your enthusiasm to be here!');
 //   }
 
 //   return (
@@ -33,7 +33,7 @@ class Hello extends React.Component<Props, object> {
     const { name, enthusiasmLevel = 1} = this.props;
 
     if (enthusiasmLevel <= 0) {
-      throw new ErrorEvent('You need at least level 1 on your enthusiasm to be here!'); 
+      throw new Error('You need at least level 1 on your enthusiasm to be here!'); 
     }
 
     return (
